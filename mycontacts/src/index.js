@@ -9,7 +9,7 @@ const app = express();
 //     routes,
 //     (request, response) => {}, 
 // ]);
-
+app.use(express.json());
 app.use(routes);
 
 app.listen(3000, () => console.log('Server na porta 3000: http://localhost:3000'));
